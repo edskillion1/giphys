@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //initial array of types of sports to pre-populate starter buttons
+    //initial array of types of items to pre-populate starter buttons
     var topics = ["Trees", "Fruits", "Crystals", "Vegetables", "Nuts", "Flowers", "Bugs", "Birds", "Fish"];
 
     //first need function to GET attributes and display content to DOM using Giphy API and JSON
@@ -16,7 +16,7 @@ $(document).ready(function() {
             method: "GET"
         }).done(function(response) {
 
-            //empty sports div so new selection appends to emtpy div - do not want previous searches listed
+            //empty div so new selection appends to emtpy div - do not want previous searches listed
 
             $("#nature").empty();
 
